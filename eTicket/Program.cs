@@ -10,6 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer("Data Source = localhost; Database = ecommerce-app-db; integrated security = True;"));
 //?? dikkat et srvis hatasý geleblir
 builder.Services.AddScoped<IActorsService, ActorsService>();
+builder.Services.AddScoped<IProducersService, ProducersService>();
 builder.Services.AddControllersWithViews();
 
 

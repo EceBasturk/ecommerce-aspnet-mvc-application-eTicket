@@ -1,5 +1,5 @@
 ﻿using eTicket.Models;
-using eTickets.Data.Base;
+using eTicket.Data.Base;
 
 namespace eTicket.Data.Services
 {

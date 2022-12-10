@@ -15,33 +15,33 @@ namespace eTicket.Data
                 //Cinema
                 if (!context.Salons.Any())
                 {
-                    context.Salons.AddRange(new List<Salon>()
+                    context.Salons.AddRange(new List<Cinema>()
                     {
-                        new Salon()
+                        new Cinema()
                         {
                             Name = "Salon 1",
                             Logo = "http://dotnethow.net/images/cinemas/cinema-1.jpeg",
                             Description = "This is the description of the first cinema"
                         },
-                        new Salon()
+                        new Cinema()
                         {
                             Name = "Salon 2",
                             Logo = "http://dotnethow.net/images/cinemas/cinema-2.jpeg",
                             Description = "This is the description of the first cinema"
                         },
-                        new Salon()
+                        new Cinema()
                         {
                             Name = "Salon 3",
                             Logo = "http://dotnethow.net/images/cinemas/cinema-3.jpeg",
                             Description = "This is the description of the first cinema"
                         },
-                        new Salon()
+                        new Cinema()
                         {
                             Name = "Salon 4",
                             Logo = "http://dotnethow.net/images/cinemas/cinema-4.jpeg",
                             Description = "This is the description of the first cinema"
                         },
-                        new Salon()
+                        new Cinema()
                         {
                             Name = "Salon 5",
                             Logo = "http://dotnethow.net/images/cinemas/cinema-5.jpeg",

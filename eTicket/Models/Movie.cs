@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace eTicket.Models
 {
-    public class Movie
+    public class Movie 
     {
         [Key]
         public int Id { get; set; }
@@ -24,7 +24,7 @@ namespace eTicket.Models
         //Cinema
         public int SalonId { get; set; }
         [ForeignKey("SalonId")]
-        public Salon Salon { get; set; }
+        public Cinema Salon { get; set; }
 
         //Producer
         public int ProducerId { get; set; }

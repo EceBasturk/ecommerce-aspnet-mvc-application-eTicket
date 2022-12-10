@@ -7,10 +7,11 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 //connection hatasý alabilirsin
 
-builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer("Data Source = localhost; Database = ecommerce-app-db; integrated security = True;"));
+builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer("Data Source = localhost; Database = ecommerce-app-db2; integrated security = True;"));
 //?? dikkat et srvis hatasý geleblir
 builder.Services.AddScoped<IActorsService, ActorsService>();
 builder.Services.AddScoped<IProducersService, ProducersService>();
+builder.Services.AddScoped<ICinemasService, CinemasService>();
 builder.Services.AddControllersWithViews();
 
 
